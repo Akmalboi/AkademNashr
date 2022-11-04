@@ -1,0 +1,353 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+html{
+    font-size: 10px;
+}
+:root{
+    --color1:#ff7500;
+    --color2:#252420;
+    --color3:#ffffff;
+    --color4:rgba(255, 117, 0, 0.6);
+    --color5:rgba(37,36,32, 0.5);
+    --color6:#f8f8f8;
+    --color7:#252420;;
+    --color8:#000000;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.navbar {
+    padding-bottom: 1rem;
+}
+.bg-nav {
+    padding: 1.6rem 0 ;
+
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background: var(--color1);
+
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 227px;
+    height: 60px;
+
+}
+
+.logo img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+
+}
+
+.nav-right {
+    gap: 32px;
+
+}
+
+.list li {
+    display: inline-block;
+}
+
+.list li:not(:last-child) {
+    margin-right: 32px;
+}
+
+.list li a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color8);
+    transition: 0.2s;
+
+
+}
+.list li a:hover{
+    color:var(--color1);
+}
+.list li :active{
+    opacity:0.6 ;
+}
+.list li a.active{
+    padding-bottom: 0.4rem ;
+    border-bottom: 3px solid var(--color1);
+}
+.site-btn {
+    background: var(--color1);
+    border-radius: 4px;
+    padding: 1.2rem 2.4rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: var(--color3);
+    border: none;
+}
+.site-btn:hover{
+    opacity: 0.8;
+}
+.site-btn:active{
+    opacity: 0.6;
+}
+
+.lines {
+    width: 80px;
+    height: 3px;
+    background-color: var(--color1);
+}
+
+.bg-hero {
+    background: var(--color2);
+
+}
+
+.hero-text {
+    color: var(--color3);
+    width: 387px;
+
+}
+
+.hero-text .lines {
+    margin: bottom 4rem;;
+
+}
+
+.hero-text h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 00.5px;
+    margin-bottom: 2.4rem;
+
+}
+
+.hero-text p {
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    margin-bottom:3.2rem;
+}
+
+.hero-img {
+    transform: translateY(40px);
+}
+
+.hero-img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    box-shadow: 24px 24px 0px var(--color4);
+    border-radius: 8px;
+}
+
+.about {
+    padding: 21rem 0;
+}
+
+.about .lines {
+    margin-bottom: 2.4rem;
+}
+
+.about-title {
+    font-style: normal;
+    margin-bottom: 7.2rem;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 7.2rem;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    width: 435px; 
+}
+
+.card {
+    width: 340px;
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.2)
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 32px;
+}
+
+.card h3{
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+}
+.card p{
+    font-size: 1.6rem ;
+    line-height: 150%;
+    letter-spacing: 00.5px;
+}
+.bg-sale{
+    padding-top: 12rem;
+    padding-bottom: 16rem;
+}
+.sale{
+    background: var(--color2);
+    border-radius: 12px;
+    padding: 0 6.4rem ;
+    color: var(--color3);
+}
+.sale img{
+    transform: translateY(-85px);
+    width: 440px;
+    height: 440px;
+}
+.sale img img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.sale-text{
+    width:400px ;
+
+}
+.sale-text h1{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+.sale-text p{
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.matn{
+    margin-bottom: 2.4rem ;
+}
+.matn span{
+    font-weight: 700;
+    color: var(--color1);
+}
+.footer{
+    background: #f8f8f8;
+    padding: 5.6rem 0;
+}
+.footer-top{
+    margin-bottom: 4rem ;
+
+}
+.hr-line{
+    height: 2px ;
+    background: var(--color5);
+}
+.footer-button{
+    align-items: flex-start;
+    margin-top: 64px;
+}
+.footer-button ul li{
+    margin-bottom: 1.6rem;
+}
+.footer-button ul li a{
+    font-size: 1.6rem ;
+    line-height: 19px;
+    color: #252420;
+}
+.footer-button ul li a:hover{
+    color: var(--color1);
+}
+.footer-button ul li a:active{
+    opacity: 0.6;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 16px ;
+
+}
+.footer-logo{
+    width: 227px ;
+    height: 60px ;
+}
+.footer-logo img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+
+}
+.footer-logo img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+
+    
+}
+.icons svg path{
+    transition: .5s;
+}
+.icons svg:hover path{
+    fill: var(--color1);
+    cursor: pointer;
+    
+}
+.icons svg:active path{
+    opacity: 0.6;
+
+}
+
